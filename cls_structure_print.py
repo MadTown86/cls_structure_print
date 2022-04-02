@@ -6,7 +6,6 @@ to give a clearer picture how Python traverses class structure when classes are 
 class_tier = 0
 class_cont = []
 
-
 def printerclsfunc(obj):
     """
     This is a printer function that houses the framework for what data you want printed from each class
@@ -34,7 +33,6 @@ def printerclsfunc(obj):
         printout += "\nThese are classes already reached: %s" % [contcls for contcls in class_cont]
         return print(printout)
 
-
 def treeshredder_recurse(obj):
     """
     This function is passed an instance object and houses the logic for collecting class tree structure data via recursion
@@ -61,6 +59,10 @@ def treeshredder_recurse(obj):
                 treeshredder_recurse(obj.__class__.__bases__[suprcls])
         else:
             return
+
+
+
+
 
 
 class Treeshredder():
