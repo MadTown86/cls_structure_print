@@ -15,17 +15,17 @@ def printerclsfunc(obj):
     global class_tier
     printout = ''
     if hasattr(obj, '__bases__'):
-        printout += "THIS IS FROM THE SUPER CLASSES"
-        printout += "\n Class:: %s is Tier %s" % (obj.__name__, class_tier)
+        printout += "\nCLASS INFORMATION"
+        printout += "\nClass:: %s is Tier %s" % (obj.__name__, class_tier)
         printout += "\nThe following list contains class methods: " \
                     + str([meth for meth in dir(obj) if not meth.startswith("l")])
         printout += "\nIts SUPER classes are: %s" % [supcls for supcls in obj.__bases__]
         if hasattr(obj, "__subclasses__"):
-            printout += "\n This Classes SUB-CLASSES are: %s" % [subcls for subcls in obj.__subclass__]
+            printout += "\nThis Classes SUB-CLASSES are: %s" % obj.__subclasses__
         printout += "\nThese are classes already reached: %s" % [contcls for contcls in class_cont]
         return print(printout)
     else:
-        printout += "THIS IS FROM THE INSTANCE"
+        printout += "\nINSTANCE INFORMATION"
         printout += "\nClass:: %s is Tier %s" % (obj.__class__, class_tier)
         printout += "\nThe following list contains class methods: " \
                     + str([meth for meth in dir(obj) if not meth.startswith("__")])
@@ -84,7 +84,7 @@ if __name__ == "__main__":
 
 
     def test_label(var):
-        print("\n\n TEST %s *******************" % var)
+        print("\n\nTEST %s *******************" % var)
 
     def test1():
         """
