@@ -5,6 +5,8 @@
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/venv" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/subpackagetest" />
+      <excludeFolder url="file://$MODULE_DIR$/maincode"/>
     </content>
     <content url="file://$APPLICATION_CONFIG_DIR$/scratches/LearningPython">
       <sourceFolder url="file://$APPLICATION_CONFIG_DIR$/scratches/LearningPython" isTestSource="false" />

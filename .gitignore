@@ -2,10 +2,10 @@ maincode/**/
 subpackagetest/**/
 venv/**/
 LearningPython/**/
-maincode/**
-subpackagetest/**
-venv/**
-LearningPython/**
+maincode/
+subpackagetest/
+venv/
+LearningPython/
 
 
 /__init__.py
@@ -152,3 +152,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/subpackagetest/
+/maincode/sub1_maincode/
+/maincode/
