@@ -1,3 +1,22 @@
+maincode/**
+subpackagetest/**
+venv/**
+LearningPython/**
+/__init__.py
+/always_scratch.py
+/always_scratch2.py
+/CH25_exercise_txt2.txt
+/changer.py
+/clsheirarch_print.py
+/Fetchdb.bak
+/Fetchdb.dat
+/Fetchdb.dir
+/myclient.py
+/recur1.py
+/recur2.py
+/techgig_anglefind.py
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
